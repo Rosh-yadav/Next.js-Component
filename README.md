@@ -1,28 +1,28 @@
 # Next.js-Component
 
-### WordPress Component
+### Next.js (TypeScript) Application
 
 ```markdown
-# WordPress Component
+# Next.js (TypeScript) Application
 
-Welcome to the WordPress Component repository! This repository contains the code for a WordPress site.
+Welcome to the Next.js (TypeScript) Application repository! This repository contains the code for a Next.js application written in TypeScript.
 
 ## Continuous Integration (CI)
 
 - CI workflows are set up using GitHub Actions.
 - Workflows are triggered on pushes to respective branches (`main`, `feature/*`).
-- PHPCS is implemented and configured to enforce coding standards for WordPress.
-- CI pipeline ensures that coding standards are met before merging changes.
+- Linting and unit testing are integrated using ESLint and Prettier.
+- CI pipelines will fail if coding standards or tests are not met.
 
 ## Containerization
 
-- The WordPress site is containerized using Docker.
+- The Next.js application is containerized using Docker.
 - Dockerfile is provided to build the Docker image.
 - Docker images are pushed to a container registry.
 
 ## Coding Standards Enforcement
 
-- PHPCS (PHP_CodeSniffer) is implemented and configured to enforce WordPress coding standards.
+- ESLint and Prettier are implemented and configured to enforce coding standards for TypeScript.
 - CI pipeline ensures that coding standards are met before merging changes.
 
 ## Deployment
@@ -32,19 +32,25 @@ Welcome to the WordPress Component repository! This repository contains the code
 
 ## Setup and Run
 
-To run the WordPress site locally, follow these steps:
+To run the Next.js application locally, follow these steps:
 
 1. Clone the repository:
 
    ```bash
-    git clone https://github.com/Rosh-yadav/WordPress-Component.git
+   git clone https://github.com/Rosh-yadav/Next.js-Component.git
+   cd Nextjs-Component
 
-   cd wordpress-component
+2.Install dependencies:
 
-2. Start the Docker container:
+  ```bash
+  npm install
 
-```bash
-docker-compose up
+3.Run the development server:
 
-Access the WordPress site in your web browser at http://localhost:8000.
+  ```bash
+  npm run dev
+
+
+Access the application in your web browser at http://localhost:3000.
+
 
