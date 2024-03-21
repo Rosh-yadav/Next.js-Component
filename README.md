@@ -37,6 +37,14 @@ To run the WordPress site locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Rosh-yadav/WordPress-Component.git
+    git clone https://github.com/Rosh-yadav/WordPress-Component.git
+
    cd wordpress-component
+
+2. Start the Docker container:
+
+```bash
+docker-compose up
+
+Access the WordPress site in your web browser at http://localhost:8000.
 
