@@ -1,1 +1,1 @@
-# Next.js-Component-Repository
+# Next.js-Component
